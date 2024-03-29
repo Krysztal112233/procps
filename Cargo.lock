@@ -420,6 +420,7 @@ dependencies = [
  "uu_free",
  "uu_pmap",
  "uu_pwdx",
+ "uu_slabtop",
  "uu_w",
  "uu_watch",
  "uucore",
@@ -762,6 +763,16 @@ name = "uu_pwdx"
 version = "0.0.1"
 dependencies = [
  "clap",
+ "uucore",
+]
+
+[[package]]
+name = "uu_slabtop"
+version = "0.0.1"
+dependencies = [
+ "bytesize",
+ "clap",
+ "sysinfo",
  "uucore",
 ]
 
