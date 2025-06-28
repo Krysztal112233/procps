@@ -11,12 +11,11 @@ license.workspace = true
 version.workspace = true
 
 [dependencies]
-uucore = { workspace = true, features = ["utmpx", "uptime"] }
+chrono = { workspace = true, default-features = false, features = ["clock"] }
 clap = { workspace = true }
-chrono = { workspace = true, default-features = false, features = [
-  "clock",
-] }
 libc = { workspace = true }
+prettytable-rs = { workspace = true }
+uucore = { workspace = true, features = ["utmpx", "uptime"] }
 
 [lib]
 path = "src/w.rs"
